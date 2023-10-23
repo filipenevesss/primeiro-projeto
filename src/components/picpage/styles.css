@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+.foto-container{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.foto-content  {
+    color: #fff;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.foto {
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    transition: 0.5s;
+}
+
+.foto:hover {
+    transform: scale(1.02);
+    color: #d21617;
+}
+
+.img1 {
+    background-image: url(https://rollingstone.uol.com.br/media/uploads/robert_pattinson_como_batman_foto_divulgacao_warner.jpg);
+}
+
+.img2 {
+    background-image: url(https://t2.tudocdn.net/614415?w=1200&h=1200);
+}
+
+.img3 {
+    background-image: url(https://epipoca.com.br/wp-content/uploads/2022/02/The-Batman-Robert-Pattinson.jpg);
+}
+
+@media(max-width: 768px){
+    .foto {
+        height: 300px;
+    }
+}
